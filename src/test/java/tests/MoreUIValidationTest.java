@@ -20,7 +20,7 @@ public class MoreUIValidationTest {
     @BeforeMethod(alwaysRun = true)
     public void setUp(){
         playwright=Playwright.create();
-        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
 
         //chrome browser -- incognito, browser
         context=browser.newContext();
